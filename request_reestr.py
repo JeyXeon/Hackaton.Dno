@@ -18,9 +18,10 @@ if res.status_code == 200:
     print('adress got')
 todo = json.loads(res.text)
 adress = todo['response']['GeoObjectCollection']['featureMember'][0]['GeoObject']['metaDataProperty']['GeocoderMetaData']['text']
-adress = adress[8:]
-url_egrnspravka = 'https://егрнсправка.рф/search/?search='+adress+'&s='
+edited_adress = adress.replace(" ", "%20")
+edited_adress = edited_adress[10:]
+url_egrnspravka = 'https://егрнсправка.рф/search/?search='+edited_adress+'&s='
 print(url_egrnspravka)
 link = urllib.request.urlopen(url_egrnspravka)
 print(link.status)
-print(adress)
+print(edited_adress)
