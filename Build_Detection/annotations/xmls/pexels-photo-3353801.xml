@@ -1,0 +1,26 @@
+<annotation>
+	<folder>imgs</folder>
+	<filename>pexels-photo-3353801.jpeg</filename>
+	<path>/home/max/imgs/pexels-photo-3353801.jpeg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>3992</width>
+		<height>2992</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>build</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1948</xmin>
+			<ymin>950</ymin>
+			<xmax>2722</xmax>
+			<ymax>1767</ymax>
+		</bndbox>
+	</object>
+</annotation>
